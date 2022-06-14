@@ -1,0 +1,52 @@
+body{
+
+	justify-content: center;
+}
+.container{
+
+	background-color: oldlace;
+	font-family: sans-serif;
+	font-size: large;
+	text-transform: capitalize;
+}
+
+h1{
+
+	background-color: #cec8bc;
+	font-family: fantasy;
+	font-size: 28px;
+	display: flex;
+	justify-content: center;
+}
+
+small{
+
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+
+}
+
+h3{
+
+	font-family: serif;
+	font-size: 22px;
+	display: flex;
+	justify-content: center;
+}
+
+a{	
+	color: #191917;
+	padding: 1em , 1.5em;
+	text-transform: capitalize;
+	font-size: 13px;
+	display: flex;
+	justify-content: start;
+	flex-direction: row;
+}
+
+a:visited{
+	color: darkgray;
+}

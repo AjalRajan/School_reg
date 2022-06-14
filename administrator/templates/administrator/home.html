@@ -1,0 +1,27 @@
+{% extends 'administrator/base.html' %}
+
+{% load static %}
+
+{% block content %}
+	
+	<head>
+		<link rel="stylesheet" type="text/css" href="{% static '/home.css' %}">
+	</head>
+
+	{% for detail in object_list %}
+		<h1>Name :{{detail.stname}}</h1>
+		
+
+		<small>Class :{{detail.stcls}}</small><br>
+
+		<small>Roll Number :{{detail.stroll}}</small>
+
+		<h3>Address :{{detail.staddr}}</h3>
+
+		<a href = "{% url 'updatestud' detail.pk%} "> Update Details</a><br>
+
+		<a href = "{% url 'deletestud' detail.pk%} "> Delete Student</a><br>
+	
+	{% endfor %}
+
+{% endblock%}                  
